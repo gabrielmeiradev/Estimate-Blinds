@@ -101,7 +101,7 @@ input{
     }
     .total-area{
         width: 100vw !important;
-        font-size: 1.7rem;
+        font-size: 2rem !important;
     }
     
 }
