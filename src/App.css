@@ -103,6 +103,9 @@ input{
         width: 100vw !important;
         font-size: 2rem !important;
     }
+	.close-button{
+		font-size: 1rem !important;
+	}
     
 }
 
