@@ -1,0 +1,9 @@
+export const ilhoses = {
+    "ILHOS 19 REDONDO": 4.4,
+    "ILHOS 19 QUADRADO ": 1.62,
+    "ILHOS 28 REDONDO": 1.72,
+    "ILHOS 28 QUADRADO": 1.72,
+    "ILHOS 19 QUADRADO": 4.4,
+    "ILHOS 28 REDONDO PVC": 0.7,
+    "ILHOS 28 QUADRADO PVC": 0.7
+}
