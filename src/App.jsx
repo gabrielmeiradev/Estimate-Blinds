@@ -23,7 +23,7 @@ function App() {
     for(let tecido in valoresTecidos){
       tecido = valoresTecidos[tecido]
       if(tecido.produto == '') continue
-      multTotal += tecido.mult 
+      multTotal += tecido.mult * largura
     }
     return (multTotal / 1.5) * 30
   }
@@ -98,7 +98,7 @@ function App() {
     // fita_facil_wave = mult_xale
     let total = 0 
 
-    let mult_xale = valoresTecidos['xale']['mult']
+    let mult_xale = valoresTecidos['xale']['mult'] * largura
     // Acessórios
     for(let acessorio in valoresAcessorios){
       let acessorioObj = valoresAcessorios[acessorio]
@@ -106,6 +106,7 @@ function App() {
       switch(acessorio){
         case 'entretela':
           total += (acessorioObj.valor * mult_xale) * acessorioObj.mult
+          console.log(mult_xale)
           console.log(acessorio, ': ', (acessorioObj.valor * mult_xale) * acessorioObj.mult)
           break
         case 'ilhos':
@@ -129,8 +130,8 @@ function App() {
     
     for(let tecido in valoresTecidos){
       tecido = valoresTecidos[tecido]
-      total += tecido.valor * tecido.mult
-      console.log(tecido, ': ', tecido.valor)
+      total += tecido.valor * tecido.mult * largura
+      console.log(tecido.produto, ': ',tecido.valor * tecido.mult * largura)
     }
     
     let maoDeObra = calcularMaoDeObra()
