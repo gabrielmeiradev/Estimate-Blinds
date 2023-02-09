@@ -16,7 +16,6 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    place-items: center;
     /* background: #fcfcfc; */
     background: #17191a;
 }
