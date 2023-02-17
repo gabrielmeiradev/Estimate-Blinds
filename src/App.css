@@ -13,7 +13,8 @@ body * {
 
 body {
     display: flex;
-    align-items: center;
+    padding-top: 12vh;
+    box-sizing: border-box;
     justify-content: center;
     width: 100vw;
     height: 100vh;
