@@ -13,7 +13,7 @@ body * {
 
 body {
     display: flex;
-    padding-top: 12vh;
+    padding-top: 5vh;
     box-sizing: border-box;
     justify-content: center;
     width: 100vw;
