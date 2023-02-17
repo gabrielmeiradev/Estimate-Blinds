@@ -13,7 +13,6 @@ body * {
 
 body {
     display: flex;
-    padding-top: 5vh;
     box-sizing: border-box;
     justify-content: center;
     width: 100vw;
@@ -159,4 +158,10 @@ header{
     border-radius: 50%;
     cursor: pointer;
     background: rgba(255, 255, 255, .2);
+}
+
+@media screen and (min-width: 720px){
+	body{
+		align-items: center;
+	}
 }
