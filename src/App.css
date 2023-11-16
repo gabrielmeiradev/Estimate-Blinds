@@ -61,7 +61,7 @@ input{
     width: 250px;
 }
 
-.button_calcular{
+.button_action{
     background: #0071E3;
     border-radius: 10px;
     box-sizing: border-box;
@@ -72,6 +72,13 @@ input{
     color: #FFFFFF;
 }
 
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+
 @media screen and (max-width: 700px){
     .row{
         flex-direction: column;
@@ -79,7 +86,8 @@ input{
     .app{
         width: 100vw;
         padding: 20px;
-        padding-bottom: 12vh;
+        /* space for action buttons */
+        padding-bottom: 18vh;
         box-sizing: border-box;
     }
     .default-input{
@@ -89,7 +97,7 @@ input{
         width: 10%;
     }
 
-    .button-container{
+    .buttons-container{
         position: fixed;
         bottom: 0;
         left: 0;
@@ -98,6 +106,7 @@ input{
         box-sizing: border-box;
         width: 100vw;
         background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.7) 100%);
+        flex-direction: column;
     }
     .total-area{
         width: 100vw !important;
@@ -129,6 +138,8 @@ header{
     align-items: center;
     width: 20vw;
     height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
     top: 0;
     font-size: 1.1rem;
     right: 0;

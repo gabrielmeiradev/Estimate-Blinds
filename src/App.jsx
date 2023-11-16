@@ -87,7 +87,7 @@ function App() {
     totalArea.style.transform = "translateX(100%)"
   }
   
-  function getTotal() {
+  function calcularHandle() {
     const totalArea = document.querySelector('.total-area')
     totalArea.style.transform = "translateX(0)"
     // Rules:
@@ -147,11 +147,15 @@ function App() {
   
   const [totalGlobal, setTotalGlobal] = useState("") 
 
+  const orcamentoHandle = () => {
+    
+  }
+
   return (
     <div className='app'>
       <header>
         <img class="logo" src="logo-branco.png" alt="" />
-        <h1>Estimate</h1>
+        <h1>Orçamento de persianas</h1>
       </header>
       <div className="row">
         <div className="input default-input">
@@ -340,13 +344,15 @@ function App() {
           <input type="number" value={valoresAcessorios.ponteiragrossa.mult} onChange={(event) => {multHandleAcessorio(event, 'ponteiragrossa')}} />
         </div>
       </div>
-      <div className="button-container">
-        <button onClick={getTotal} className="button_calcular">Calcular</button>
+      <div className="buttons-container">
+        <button onClick={calcularHandle} className="button_action">Calcular</button>
       </div>
       <div className='total-area'>
         <span className="close-button" onClick={closeTotal}>x</span>
         <p>Total:</p>
         <h2>{totalGlobal}</h2>
+        <br />
+        <button onClick={orcamentoHandle} className="button_action">Cadastrar orçamento</button>
       </div>
     </div>
   )
